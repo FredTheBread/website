@@ -11,20 +11,63 @@
 </head>
 
 <body>
-
+      
     <div class="topnav">
-        <a href="#" class="active" style="float: right">Home</a>
-        <a href="#" style="float: right">Contact</a>
-        <a href="#" style="float: right">Reviews</a>
-        <a href="https://discord.gg/YvJN42HhBS" style="float: right">Discord</a>
+        <a href="#" class="active" >Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Reviews</a>
+        <a href="https://discord.gg/YvJN42HhBS">Discord</a>
+
+        <!--<ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Fortnite Accounts</a></li>
+                <li><a href="#">Steam Accounts</a></li>
+                <li><a href="#">Steam Codes</a></li>
+                <li><a href="#">Fifa Coins</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reviews</a></li>
+        </ul>-->
     </div>
-    <div class="logo">
+
+    <div class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+
+    </div>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Fortnite Accounts</a>
+        <a href="#">Steam Accounts</a>
+        <a href="#">Steam Codes</a>
+        <a href="#">Fifa Coins</a>
+        <a href="#">Contact</a>
+        <a href="#">Reviews</a>
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+        }
+    </script>
+
+    <!--<div class="logo">
         <a href="/"><img src="imgs/MonkeyAlts-1.png"></a>
     </div>
-    <!--
+    
     <div class="discord">
         <a href="https://discord.gg/YvJN42HhBS"><img src="imgs/discord.png" class="img-fluid"></a>
-    </div>-->
+    </div>
 
     <div class="menu-wrap">
 
@@ -33,24 +76,18 @@
 
         <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Fortnite Accounts</a></li>
-                <li><a href="#">Steam Accounts</a></li>
-                <li><a href="#">Steam Codes</a></li>
-                <li><a href="#">Fifa Coins</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Reviews</a></li>
+                
             </ul>
         </div>
-    </div>
+    </div>--->
 
     <header class="showcase">
+        <h1>Welcome to MonkeyAlts</h1>
         <div class="container">
-            <h1>Welcome to MonkeyAlts</h1>
+            
             <p>The most reliable, secure and trustworthy seller on the platform.</p>
             <span></span>
             <p>We provide the best accounts and are available 24/7 on Discord.</p>
-
         </div>
         <a href="#" class="btn">Continue to our shop</a>
     </header>

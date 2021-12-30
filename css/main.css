@@ -1,20 +1,72 @@
 p {
-    color: rgb(208, 255, 0);
+    color: rgb(255, 255, 255);
 }
 
 body {
     background-image: linear-gradient(to left, #966fd6, #4e3bf7);
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: 'SF Pro';
     line-height: 1.2;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 34%;
+
+    left: 44.2%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+.open-slide {
+    top: 30%;
 }
 
 .topnav {
     background-color: linear-gradient(to left, #966fd6, #4e3bf7);
     overflow: hidden;
+
+    margin: auto;
+    width: 27%;
+    padding: 10px;
+}
+
+.side-nav {
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: black;
     text-align: center;
@@ -24,12 +76,13 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(158, 61, 61);
     color: black;
 }
 
 .topnav a.active {
     color: white;
+    border-bottom: 4px solid white;
 }
 
 .topnav .icon {
@@ -73,12 +126,14 @@ body {
 
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 0.3;
+    font-size: 20px;
 }
 
 .btn {
-    background-color: #4CAF50;
+    background-color: white;
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -86,7 +141,7 @@ body {
     font-size: 16px;
 
     position: absolute;
-    top: 60%;
+    top: 59%;
     /* left value should be adjusted to the text and overall center)*/
     left: 50%;
     transform: translate(-50%, -50%);
