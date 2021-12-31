@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 p {
     color: rgb(255, 255, 255);
 }
 
 body {
     background-image: linear-gradient(to left, #966fd6, #4e3bf7);
-    font-family: 'SF Pro';
+    font-family: 'Source Sans Pro';
     line-height: 1.2;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -13,12 +20,34 @@ h1 {
     position: absolute;
     top: 34%;
 
-    left: 44.2%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 35px;
 }
+
 .open-slide {
-    top: 30%;
+
+    top: 10%;
+
+    position: absolute;
+    top: 1em;
+
+    left: 1em;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+@media(max-width:568px) {
+    .topnav {
+        display: none;
+    }
+}
+
+@media(min-width:568px) {
+    .open-slide {
+        display: none;
+    }
 }
 
 .topnav {
@@ -32,7 +61,7 @@ h1 {
 
 .side-nav {
     height: 100%;
-    width:0;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
